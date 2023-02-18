@@ -24,6 +24,7 @@ function App() {
       setPending(true);
       const { data } = await axios.post(
         'https://stock-mailer.herokuapp.com/resend',
+        // 'http://localhost:8000/resend',
         {
           data: pw,
         }
